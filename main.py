@@ -12,6 +12,7 @@ def main(
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': output_music_file_folder + '/%(title)s.%(ext)s',
+        'cookiefile': 'cookies.txt',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',
